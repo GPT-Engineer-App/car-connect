@@ -1,14 +1,12 @@
-import { Container, Text, VStack, Heading, Button } from "@chakra-ui/react";
+import { Container, Typography, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
-    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-      <VStack spacing={4}>
-        <Heading as="h1" size="2xl">Welcome to ShiftHappens</Heading>
-        <Text fontSize="lg">Connect with car enthusiasts, join events, create and join car clubs, and share your passion for cars.</Text>
-        <Button as={Link} to="/connect" colorScheme="teal" size="lg">Get Started</Button>
-      </VStack>
+    <Container style={{ textAlign: 'center', marginTop: '20vh' }}>
+      <Typography variant="h1" gutterBottom>Welcome to ShiftHappens</Typography>
+      <Typography variant="body1" paragraph>Connect with car enthusiasts, join events, create and join car clubs, and share your passion for cars.</Typography>
+      <Button variant="contained" color="primary" component={Link} to="/connect">Get Started</Button>
     </Container>
   );
 };

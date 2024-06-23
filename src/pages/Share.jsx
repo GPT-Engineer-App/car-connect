@@ -1,10 +1,7 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Container, Typography } from "@mui/material";
 
 const Share = () => (
-  <Box p={4}>
-    <Heading as="h2" size="xl" mb={4}>Share Pictures and Engage</Heading>
-    <Text fontSize="lg">Share your car pictures and engage with other users.</Text>
-  </Box>
-);
-
-export default Share;
+  <Container>
+    <Typography variant="h2" gutterBottom>Share Pictures and Engage</Typography>
+    <Typography variant="body1">Share your car pictures and engage with other users.</Typography>
+  </Container>

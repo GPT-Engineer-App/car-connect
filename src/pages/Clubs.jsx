@@ -1,10 +1,10 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Container, Typography } from "@mui/material";
 
 const Clubs = () => (
-  <Box p={4}>
-    <Heading as="h2" size="xl" mb={4}>Create and Join Car Clubs</Heading>
-    <Text fontSize="lg">Join existing car clubs or create your own to connect with like-minded enthusiasts.</Text>
-  </Box>
+  <Container>
+    <Typography variant="h2" gutterBottom>Create and Join Car Clubs</Typography>
+    <Typography variant="body1">Join existing car clubs or create your own to connect with like-minded enthusiasts.</Typography>
+  </Container>
 );
 
 export default Clubs;
