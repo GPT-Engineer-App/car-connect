@@ -6,3 +6,5 @@ const Share = () => (
     <Typography variant="body1">Share your car pictures and engage with other users.</Typography>
   </Container>
 );
+
+export default Share;
