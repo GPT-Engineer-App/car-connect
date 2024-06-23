@@ -1,10 +1,10 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Container, Typography } from "@mui/material";
 
 const Connect = () => (
-  <Box p={4}>
-    <Heading as="h2" size="xl" mb={4}>Connect with Car Enthusiasts</Heading>
-    <Text fontSize="lg">Find and connect with other car enthusiasts in your area.</Text>
-  </Box>
+  <Container>
+    <Typography variant="h2" gutterBottom>Connect with Car Enthusiasts</Typography>
+    <Typography variant="body1">Find and connect with other car enthusiasts in your area.</Typography>
+  </Container>
 );
 
 export default Connect;
